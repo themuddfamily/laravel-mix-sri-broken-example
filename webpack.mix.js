@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
+require('laravel-mix-sri')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.sass('resources/css/ie9.scss', 'public/css/ie9.css').generateIntegrityHash();
+
+mix.scripts([
+    'node_modules/jquery/dist/jquery.js',
+    'bower_components/handlebars/handlebars.js',
+], 'public/js/app.js').generateIntegrityHash();
