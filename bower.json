@@ -1,0 +1,20 @@
+{
+  "name": "laravel-mix-sri-broken-example",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Adam <adam@wirebox.co.uk>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/themuddfamily/laravel-mix-sri-broken-example",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}
